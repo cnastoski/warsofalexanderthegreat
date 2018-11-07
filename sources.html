@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <title>!!!!CHANGE THIS!!!!!!</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <img style="border-radius: 8px;" src="img/Greekbanner.png" alt="lol">
+        <div class="centered">Sources</div>
+      </div>
+      <div id="mySidenav" class="sidenav" style="font-family: DalekPinpoint;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Introduction</a>
+        <a href="page1.html">Section 1</a>
+        <a href="#">Section 2 (not done)</a>
+        <a href="sources.html">Sources</a>
+      </div>
+      <div id="main">
+        <span style="font-size:30px; cursor:pointer; font-family: DalekPinpoint; position: relative; bottom: 310px; right: 10px;" onclick="openNav()">&#9776; contents</span>
+      </div>
+      <div class="card">
+        <ul>
+             <li><a href="#sources1">Source one</a></li>
+             <li><a href="#sources2">Source three</a></li>
+             <li><a href="#sources3">Lol</a></li>
+        <ul>
+        <div class="fakeimg" style="height:200px;"></div>
+        <div id="sources1" style="textalign: left;">SOURCES!!!!!!111</div>
+        <div id="sources2" style="textalign: left;">lol</div>
+        <div id="sources3" style="textalign: left;">something...</div>
+      </div>
+      <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgb(96, 64, 32)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "rgb(172, 115, 57)";
+    }
+      </script>
+    </body>
+  </head>
+</html>
