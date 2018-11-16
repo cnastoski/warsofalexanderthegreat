@@ -114,6 +114,12 @@ a:active {
   bottom: 100px;
 }
 
-#validators {
+
+footer {
+  position: relative;
+  width: 50%;
   font-family: Arial;
+  font-size: 15px;
+  font-weight: bolder;
+
 }
