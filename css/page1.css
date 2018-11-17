@@ -18,7 +18,7 @@ html {
 
 .bottom {
   position:relative;
-  top: 796px;
+  top: 2300px;
   margin: 0;
   padding: 0;
   left:0%;
@@ -54,12 +54,12 @@ html {
 
 a:link {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
