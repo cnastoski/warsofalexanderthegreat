@@ -7,10 +7,21 @@ html {
   background-color: #ac7339;
 }
 
-.fix{
-    position:fixed;
-    bottom:0px;
+.top{
+    position:relative;
+    bottom:8px;
     left:0%;
+    right:0%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bottom {
+  position:relative;
+  top: 796px;
+  margin: 0;
+  padding: 0;
+  left:0%;
 }
 
 .card {
@@ -94,4 +105,13 @@ a:active {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+footer {
+  position: relative;
+  width: 50%;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bolder;
+
 }
