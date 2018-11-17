@@ -125,3 +125,33 @@ footer {
   font-weight: bolder;
 
 }
+
+.card th {
+  width: 50%;
+}
+
+#figures {
+  font-weight: lighter;
+  text-align: left;
+  font-size: 13px;
+}
+
+.card a:link {
+  text-decoration: underline;
+  color: black;
+}
+
+.card a:visited {
+  text-decoration: underline;
+  color: black;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.card a:active {
+  text-decoration: underline;
+  color: black;
+}
