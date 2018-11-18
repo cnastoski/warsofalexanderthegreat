@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Working with Forms</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+td {
+	vertical-align: top;
+}
+
+fieldset {
+	text-align: left;
+	padding: 5px;
+	background-color: #eee;
+}
+
+legend {
+	background-color: #f93;
+	border: 1px solid #f00;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+section {
+	width: 550px;
+	margin: 20px auto;
+}
+
+#validation {
+	text-align:center;
+}
+
+</style>
+</head>
+
+
+<body>
+<a href="home.htm">Back to HomePage</a>
+ <header>
+<h1> Music Survey</h1>
+	
+</header>
+<form id="survey" name="survey" method="post"
+	action="http://webdevfoundations.net/scripts/formdemo.asp"
+	enctype="application/x-www-form-urlencoded"
+	oninput="x.value=parseInt(range.value)+parseInt(0)">
+<section>
+<h4> Please complete the following information about yourself below. </h4>
+<fieldset>
+<legend><strong> Step 1: Your Information </strong></legend>
+
+<table>
+	<tr>
+		<td>Name:</td>
+		<td><input type="text" name="Full Name" id="username" size="30" tabindex="1" placeholder="Full Name"></td>
+		
+	<tr>
+		<td>Email:</td>
+		<td><input type="email" name="Email Address" id="email" size="30" tabindex="2" placeholder="Email Address"></td>
+		
+	</tr>
+	<tr>
+		<td>Phone Number</td>
+		<td><input type="tel" name="Phone Number" id="phone" size="30" tabindex="3" placeholder="Phone Number"></td>
+		
+	</tr>
+	<tr>
+		<td>I Am</td>
+		<td><input type="radio" name="sex" id="CustSexM" value="male" tabindex="4"> Male &nbsp; <input type="radio" name="sex" id="CustSexF" value="Female"> Female</td>
+		
+	</tr>
+	<tr>
+		<td>Age</td>
+		<td><input type="range" name="Age" id="range" value="0" min="0" max="100" step="1" tabindex="6"> <output name="x" for="range"> Years Old </output></td>
+		
+	</tr>
+
+</table>
+</fieldset>
+</section>
+<section> 
+<h4> Let us know about yout favorite genre(s). Check all that apply </h4>	
+<fieldset>
+<legend><strong>Step 2: Favorite Genre(s)</strong></legend><br>
+<label>Pop:</label>
+<input name="genre" type="checkbox" value="pop" tabindex="7">
+<label>Rock:</label>
+<input name="genre" type="checkbox" value="Rock" tabindex="8">
+<label>Rap:</label>
+<input name="genre" type="checkbox" value="Rap" tabindex="9">
+<label>Classical:</label>
+<input name="genre" type="checkbox" value="classical" tabindex="10">
+<label>folk:</label>
+<input name="genre" type="checkbox" value="folk" tabindex="11">
+<label>Country:</label>
+<input name="genre" type="checkbox" value="Country" tabindex="12">
+<label>Other:</label>
+<input name="genre" type="checkbox" value="Other" tabindex="13">
+</fieldset>
+</section>
+<section>
+<h4> How do you purchase your music?</h4>
+<fieldset>
+<legend><strong> Step 3: Purchase Options</strong></legend><br>
+I mainly purchase music through:
+<select id="purchase_options" name="purchase_options"   tabindex="14" >
+	<option selected="selected" disabled>Please Select One...</option>
+	<option value="iTunes">iTunes</option>
+	<option value="p2p">Peer2Peer Sites</option>
+	<option value="paid_sites">Paid Subscription Sites</option>
+	<option value="other">Other</option>
+</select>
+</fieldset>
+</section>
+<section>
+<h4>Please share your thoughts with us</h4>
+<fieldset>
+<legend><strong> Step 4: Share your Thoughts</strong></legend><br>
+<label> How has music influenced your life?</label>
+<textarea name="Comments" rows="4" cols="50" tabindex="15" onfocus="javascript:this.value='';"> Place your comments here
+</textarea>
+</fieldset>
+</section>
+<section>
+<h4>Submit or Reset the form below</h4>
+<fieldset>
+<legend><strong> Step 5: Send It</strong></legend><br>
+<input id="submit" type="submit" value="Complete Survey" tabindex="16"> &nbsp;
+<input id="reset" type="reset" value="Reset" tabindex="17">
+</fieldset>
+</section>
+</form>
+<p>
+<a href="http://validator.w3.org/check?uri=referer" title="HTML5 Validation"> HTML5
+Validation</a>
+</p>
+</body>
+</html>
