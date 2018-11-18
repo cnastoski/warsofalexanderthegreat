@@ -18,6 +18,10 @@
     transform: translate(-50%, -50%);
 }
 
+div .centered {
+  text-shadow: 5px 5px #000000;
+}
+
 body {
   background-color: #ac7339;
 }
