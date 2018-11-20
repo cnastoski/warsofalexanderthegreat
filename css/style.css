@@ -163,3 +163,9 @@ footer {
 .card p {
   text-indent: 30px;
 }
+
+li {
+  weight: bold;
+  text-align: left;
+  font-size: 13px;
+}
